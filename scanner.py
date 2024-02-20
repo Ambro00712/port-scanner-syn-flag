@@ -43,7 +43,7 @@ if scelta == "1":
 
 
     
-    print(colored("inserisci un ip da scannerizzare:", "yellow"))
+    print(colored("insert an ip to scan:", "yellow"))
     dest_ip=input()
 
     incr=1
@@ -74,7 +74,7 @@ if scelta == "1":
 
     for porta in porte_aperte:
         if porta != 0:
-            print("Porta aperta:", porta)
+            print("Open port:", porta)
 
 
             
@@ -85,9 +85,9 @@ elif scelta=="2":
     dest_port=0
     src_port=4800
     print("")
-    print(colored("inserisci un ip da scannerizzare","blue"))
+    print(colored("insert an ip to scan:","blue"))
     dest_ip=input()
-    print(colored("inserisci la porta da scansionare","yellow"))
+    print(colored("insert the port to scan:","yellow"))
     dest_port=int(input())
     print("")
     print("")
@@ -96,9 +96,9 @@ elif scelta=="2":
     response_packet = sr1(syn_packet, timeout=1, verbose=False)
 
     if response_packet and response_packet.haslayer(TCP) and response_packet[TCP].flags == 0x12:
-        print(dest_port, "aperta")
+        print(dest_port, "open")
     else:
-        print(dest_port, "chiusa")
+        print(dest_port, "close")
 elif scelta=="3":
     print(colored("port scanner with range","green"))
     print("")
@@ -106,12 +106,12 @@ elif scelta=="3":
     portamin=0
     portamax=0
     src_port=4800
-    print("inserisci l'ip da scannerizzare:")
+    print("insert an ip to scan:")
     dest_ip=input()
     print("")
-    print("inserisci la porta minima:")
+    print("insert the minimum port:")
     portamin=int(input())
-    print("inserisci la porta massima:")
+    print("inserisci the max port:")
     portamax=int(input())
 
     i=0
@@ -130,7 +130,7 @@ elif scelta=="3":
     print("")
     for porta in porte_aperte:
         if porta != 0:
-            print("Porta aperta:", porta)
+            print("Open port: ", porta)
         
 
     
