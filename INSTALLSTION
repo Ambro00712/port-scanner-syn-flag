@@ -1,0 +1,4 @@
+$ git clone https://github.com/Ambro00712/syn-scanner
+
+$pip install scapy
+$pip install colorama
