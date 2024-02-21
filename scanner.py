@@ -30,7 +30,7 @@ def print_colored_scanner():
 print_colored_scanner()
 print("")
 scelta=0
-print("scegli l'opzione: ")
+print("select option: ")
 print("")
 scelta=input()
 if scelta == "1":
