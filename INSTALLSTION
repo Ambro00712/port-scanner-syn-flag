@@ -1,8 +1,8 @@
-$ git clone https://github.com/Ambro00712/syn-scanner
+$ git clone https://github.com/Ambro00712/port-scanner-syn-flag
 
 $pip install scapy
 $pip install tercolor
 
-$cd syn-scanner
+$cd port-scanner-syn-flag
 $sudo su
 $python3 scanner.py
