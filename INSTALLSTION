@@ -5,4 +5,4 @@ $pip install tercolor
 
 $cd syn-scanner
 $sudo su
-$python3 syn-scanner.py
+$python3 scanner.py
